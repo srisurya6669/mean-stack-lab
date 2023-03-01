@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resigter</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+    .divreg{
+        position: fixed;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        max-width: 500px;
+        background-color: rgb(129, 145, 214);
+        border-radius: 4px;
+    }
+    input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    input[type=button]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    select[id=sls]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
+    
+    input[type=password]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 3px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }       
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <nav id="logo">
+            <a href="homepage.html" class="logo">
+                <img src="../util/logo.png" height="50px" width="100px">E-kart
+            </a>
+        </nav>
+
+        <nav class="header-right">
+            <a href="#">login</a>
+            <a href="signUp">signup</a>
+            <a href="#">Track Order</a>
+            <a href="About.html">Aboutus</a>
+        </nav>
+    </header>
+    <div class="divreg">
+       <table >
+        <th align="center" colspan="2" >Registration</th>
+        <tr >
+            <td>
+                <input type="text" id="txtuser" placeholder="username">
+            </td>
+            <td>
+                <input type="password" id="txtuser" placeholder="password">
+            </td>
+        <tr> 
+                <td >
+                <input type="text" id="txtpin" placeholder="pincode" >
+            </td>
+            <td>
+                <input type="text" id="txtloc" placeholder="location">
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2">
+                <textarea  cols="65" rows="5" placeholder="address"></textarea>
+                
+            </td>
+          
+        </tr>
+        <tr> 
+            <td >
+            <input type="text" id="txtpin" placeholder="city/town" >
+        </td>
+        <td>
+            <select id="sls">
+                <option >state</option>
+                <option >AP</option>
+                <option >TS</option>
+            </select>
+            
+        </td>
+        <tr>
+            <td>
+                <input type="text" id="txtpin" placeholder="landmark" >
+            </td>
+            <td>
+                <input type="text" id="txtpin" placeholder="phone" >
+            </td>
+           
+        </tr>
+        <tr>
+            <td colspan="2">address</td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="radio" id="idhome" name="add">home address
+            </td>
+            <td>
+                <input type="radio" id="idhome" name="add">work address
+            </td>
+        </tr>
+    </tr>
+    <tr>
+        <td colspan="2" >
+        <input type="button" value="submit">
+        </td>
+    </tr>
+           
+           
+        </tr>
+     
+       </table>
+    </div>
+</body>
+</html>
